@@ -20,6 +20,9 @@ def examples(request):
 def newUser(request):
     return render(request, 'blog/newUser.html', {})
 
+def discover(request):
+    return render(request, 'blog/discover.html', {})
+
 def login(request):
     return render(request, 'registration/login.html', {})
 

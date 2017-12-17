@@ -15,7 +15,10 @@
 .card-btn1:hover {
   background-color: #ff6666;
 }
-
+.imageupload {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .login-form {
   background-color: #535353;
@@ -201,6 +204,7 @@ footer {
   text-decoration: none;
 }
 
+
 @media (max-width: 650px){
   .carousel-caption {/* Removes caption and button on small screens */
     display: none;
@@ -281,9 +285,6 @@ footer {
     height: auto;
   }
 }
-
-
-
 
 /*
 @media (max-width: 500px){
