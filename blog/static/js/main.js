@@ -1,4 +1,5 @@
 ﻿$(document).ready(() => {
+  /*
   $('.login-button').on('click', () => {// Clicking login opens login form and hides signup form
     $('.signup-form').hide();
     $('.login-form').toggle();
@@ -15,9 +16,10 @@
   });
 
   $('#getstarted').on('click', () => {//Clicking Get Started opens sign up forn and hides log in form
-    $('.login-form').hide();
-    $('.signup-form').toggle();
-    $('html,body').scrollTop(0);
+    //$('.login-form').hide();
+    //$('.signup-form').toggle();
+    //$('html,body').scrollTop(0);
+
   });
   $('#getstarted2').on('click', () => {//Clicking Get Started opens sign up forn and hides log in form
     $('.login-form').hide();
@@ -33,7 +35,7 @@
     if (!$(this).parent().hasClass('dropdown'))
         $(".navbar-collapse").collapse('hide');
   })
-
+*/
 
     $('.card-btn1').on('click', event => {//LIKE button click funtion
       $(event.currentTarget).toggleClass('active');

@@ -52,33 +52,34 @@
           <input class="form-control mr-sm-2" type="text" placeholder="Password" aria-label="Password">
         -->
           <div class="btn-toolbar">
-            <button class="login-button btn btn-outline-success my-2 my-sm-0" type="button">Log in</button>
-            <button class="signup-button btn btn-outline-danger my-2 my-sm-0" type="button">Sign up</button>
+            <a class="login-button btn btn-outline-success my-2 my-sm-0" href="{% url 'login' %}" type="button">Log in</a>
+            <a class="signup-button btn btn-outline-danger my-2 my-sm-0" href="{% url 'signup' %}" type="button">Sign up</a>
           </div>
         </form>
       </div>
     </nav>
 <!-- END OF NAVBAR -->
     <br>
-<!-- Login Form -->
+<!--
+<!-- Login Form
      <div class='login-form'>
        <div class='container'>
          <form>
            <h2>Log in</h2>
            <input class='e-mail' type="text" placeholder="E-mail" aria-label="E-mail" />
-           <!--<h4>Password</h4>-->
+           <!--<h4>Password</h4>
            <input class='password' type="text" placeholder="Password" aria-label="Password" />
            <input class='sign-in-button' type='submit' value='Sign In' />
          </form>
        </div>
      </div>
- <!-- END OF LOGIN FORM -->
- <!-- SIGN UP FORM -->
+ <!-- END OF LOGIN FORM
+ <!-- SIGN UP FORM
       <div class='signup-form'>
         <div class='container'>
           <h2>Begin your Journey</h2>
           <div class="row">
-            <div class="col-md-6"> <!-- 2 Columns since 12/6 is 2 -->
+            <div class="col-md-6"> <!-- 2 Columns since 12/6 is 2
               <input class='firstname' type="text" placeholder="First Name" aria-label="First Name" />
               <input class='lastname' type="text" placeholder="Last Name" aria-label="Last Name" />
               <input class='new-e-mail' type="text" placeholder="E-mail" aria-label="E-mail" />
@@ -92,7 +93,8 @@
           </div>
         </div>
       </div>
-  <!-- END OF SIGNUP FORM -->
+  <!-- END OF SIGNUP FORM
+-->
 <!-- BEGINNING OF SLIDER -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -111,7 +113,7 @@
               </div>
               <br>
               <div class="carousel-btn">
-                <button id="getstarted" type="button" class="btn btn-default">Get Started</button>
+                <a id="getstarted" type="button" class="btn btn-outline-dark" href="{% url 'signup' %}">Get Started</a>
               </div>
             </div>
           </div>
@@ -208,7 +210,7 @@
             PhotoLand can be used both for commercial and personal purposes.
             We offer free 10 GB of storage for our first time joiners.
           </p>
-          <button id="getstarted2" type="button" class="btn btn-default">Sign Up Now!</button>
+          <a id="getstarted2" type="button" class="btn btn-outline-dark" href="{% url 'signup' %}">Sign Up Now!</a>
           <br>
           <br>
         </div>
