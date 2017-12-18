@@ -69,7 +69,7 @@
             <h5 style="color: #737373"> {{ user.first_name }}{{ user.last_name }}</h5>
             <br>
             <div>
-              <button id="followbtn" type="button" class="profile-btn btn btn-primary">Follow</button>
+              <button id="followbtn" type="button" class="profile-btn btn btn-primary">Upload Profile Picture</button>
               <!--<button type="button" class="btn btn-danger">Like</button>-->
               <button type="button" class="profile-btn btn btn-success">Share</button>
               <button type="button" class="profile-btn btn btn-dark">Contact</button>
@@ -97,11 +97,15 @@
               <h4 class="card-title">Click here to add a Title</h4>
               <p class="card-text">and a description or price tag</p>
             </div>
-            <input type="button" value="Save my edits" class="btn btn-primary" onclick="saveEdits()"/>
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
-
-
+              <span id="fileselector">
+                <label class="btn btn-default" for="upload-file-selector">
+                    <input id="upload-file-selector" type="file" class="btn btn-primary"/>
+                    <i class="fa_icon icon-upload-alt margin-correction"></i>
+                </label>
+              </span>
+              <input type="button" value="Upload Chosen File" class="btn btn-primary"/>
             </div>
           </div>
         </div>

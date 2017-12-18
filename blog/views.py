@@ -23,8 +23,7 @@ def newUser(request):
 def discover(request):
     return render(request, 'blog/discover.html', {})
 
-def login(request):
-    return render(request, 'registration/login.html', {})
+
 
 def signup(request):
     if request.method == 'POST':
