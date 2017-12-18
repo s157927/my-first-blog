@@ -123,10 +123,31 @@
             <h5 style="color: #737373"> Camera Operator @ TRT / Ankara </h5>
             <br>
             <div>
-              <button id="followbtn" type="button" class="profile-btn btn btn-primary">Follow</button>
+              <button type="button" class="follow-btn btn btn-primary">Follow</button>
               <!--<button type="button" class="btn btn-danger">Like</button>-->
               <button type="button" class="profile-btn btn btn-success">Share</button>
-              <button type="button" class="profile-btn btn btn-dark">Contact</button>
+              <button type="button" class="profile-btn btn btn-dark" data-toggle="modal" data-target="#myModalVolky">Contact</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModalVolky" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">E-mail</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>vcinar@ttnet.com</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -143,7 +164,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -155,7 +176,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -167,7 +188,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -183,7 +204,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -195,7 +216,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -207,7 +228,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -223,7 +244,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -235,7 +256,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -247,7 +268,7 @@
             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             <div class="card-btn text-center">
               <button type="button" class="card-btn1 btn btn-danger">Like</button>
-              <button type="button" class="card-btn2 btn btn-secondary" Style="width: 60%;">Add to Cart</button>
+              <a type="button" class="card-btn2 btn btn-secondary" href="{% url 'signup' %}" Style="width: 60%;">Add to Cart</a>
             </div>
           </div>
         </div>

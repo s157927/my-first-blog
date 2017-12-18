@@ -50,6 +50,19 @@
   });
 
 
+    $('.follow-btn').on('click', event => {//LIKE button click funtion
+      $(event.currentTarget).toggleClass('active');
+    });
+
+    $(".follow-btn").click(function() {
+    if ($(this).text() == "Follow") {
+        $(this).text("Following");
+    } else {
+        $(this).text("Follow");
+    };
+  });
+
+
 
 
 /*

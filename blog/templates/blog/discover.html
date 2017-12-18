@@ -83,11 +83,32 @@
           <h2> Paul_24 </h2>
           <h5 style="color: #737373"> Paul Hoffman </h5>
           <br>
-          <div>
-            <button id="followbtn" type="button" class="profile-btn btn btn-primary">Follow</button>
+          <div style="padding-bottom: 150px;">
+            <button type="button" class="follow-btn profile-btn btn btn-primary">Follow</button>
             <!--<button type="button" class="btn btn-danger">Like</button>-->
             <button type="button" class="profile-btn btn btn-success">Share</button>
-            <button type="button" class="profile-btn btn btn-dark">Contact</button>
+            <button type="button" class="profile-btn btn btn-dark" data-toggle="modal" data-target="#myModalPaul">Contact</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModalPaul" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">E-mail</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>paulhoffman@gamil.com</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -103,11 +124,32 @@
             <h2> Volkyc </h2>
             <h5 style="color: #737373"> Volkan Cinar </h5>
             <br>
-            <div>
-              <button id="followbtn" type="button" class="profile-btn btn btn-primary">Follow</button>
+            <div style="padding-bottom: 150px;">
+              <button type="button" class="follow-btn profile-btn btn btn-primary">Follow</button>
               <!--<button type="button" class="btn btn-danger">Like</button>-->
               <button type="button" class="profile-btn btn btn-success">Share</button>
-              <button type="button" class="profile-btn btn btn-dark">Contact</button>
+              <button type="button" class="profile-btn btn btn-dark" data-toggle="modal" data-target="#myModalVolky">Contact</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModalVolky" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">E-mail</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>vcinar@ttnet.com</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -116,7 +158,7 @@
       <!-- START OF PROFILE PICTURE -->
         <div class="Profile-info container">
           <div class="row">
-            <div class="pp col-md-6">
+            <div class="container pp col-md-6">
               <img class="profile-pic" src="{% static 'img/kenzy.jpeg' %}" alt="Profile Picture">
             </div>
             <div class="artist-info col-md-6">
@@ -124,10 +166,31 @@
               <h5 style="color: #737373"> Kenzy Tailor </h5>
               <br>
               <div>
-                <button id="followbtn" type="button" class="profile-btn btn btn-primary">Follow</button>
+                <button type="button" class="follow-btn profile-btn btn btn-primary">Follow</button>
                 <!--<button type="button" class="btn btn-danger">Like</button>-->
                 <button type="button" class="profile-btn btn btn-success">Share</button>
-                <button type="button" class="profile-btn btn btn-dark">Contact</button>
+                <button type="button" class="profile-btn btn btn-dark" data-toggle="modal" data-target="#myModalKenzy">Contact</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModalKenzy" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">E-mail</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>kenzytailor@hotmail.com</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>
