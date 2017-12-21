@@ -5,6 +5,9 @@ from django.contrib.auth import login, authenticate
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from blog.forms import SignUpForm
+from django.contrib.auth.models import User, Group
+from rest_framework import viewsets
+from blog.serializers import UserSerializer, GroupSerializer
 
 
 
@@ -53,3 +56,22 @@ def simple_upload(request):
             'uploaded_file_url': uploaded_file_url
         })
     return render(request, 'blog/simple_upload.html')
+
+
+
+#REST FRAMEWORK
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+
+
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
